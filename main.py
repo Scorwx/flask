@@ -11,7 +11,7 @@ def ana():
 @app.route('/nem', methods=['GET'])
 def get_yuzdelik():
     # Rastgele bir yüzdelik değeri oluştur
-    yuzdelik = random.uniform(0, 100)
+    yuzdelik = random.randint(0, 100)
     # JSON formatında yanıt döndür
     return jsonify({'nem': yuzdelik})
 
